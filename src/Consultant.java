@@ -1,14 +1,13 @@
 import java.io.IOException;
 
-public class Consultant {
-    private String name ;
+public class Consultant extends Human {
 
     public Consultant(String name) {
-        this.name = "Аэро" + name;
+        super(name);
     }
-
+    @Override
     public void Hello(){
-        System.out.println("Здравствуйте, я ИИ "+ name +", чем могу помочь?" );
+        System.out.println("Здравствуйте, я "+ name +", чем могу помочь?" );
     }
 
     public void viewBaseOfTour(String condition) throws IOException {

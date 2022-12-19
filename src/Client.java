@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
-public class Client {
-
-    private String name;
+public class Client extends Human{
 
     public String getChoiceCountry() {
         return choiceCountry;
@@ -15,10 +11,10 @@ public class Client {
     private String choiceCountry;
 
     public Client(String name) {
-        this.name = name;
+        super(name);
     }
-
-    public void Prihod(){
+    @Override
+    public void Hello(){
         System.out.println(name+
                 ": Здраствуйте, я хочу купить билет");
     }

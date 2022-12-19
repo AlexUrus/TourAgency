@@ -16,7 +16,7 @@ public class TourAgency  {
        System.out.println("Вас приветствует " + nameAgency);
 
        consultant.Hello();
-       client.Prihod();
+       client.Hello();
        client.askHotTour();
        consultant.viewBaseOfTour("hot");
        client.askDefTour();
