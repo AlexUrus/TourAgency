@@ -5,7 +5,7 @@ public class BaseOfTour {
 
     static {
         try {
-            fileReader = new FileReader("F:\\OOP\\RGR_tourAgency\\base.txt");
+            fileReader = new FileReader("base.txt");
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Проверьте ссылку на базу");
         }
