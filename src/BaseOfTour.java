@@ -26,7 +26,6 @@ public class BaseOfTour {
         }
     }
     public static List<TourWithVisa> getBase(String condition) throws IOException {
-       if(baseOfToursList.isEmpty()) readBase();
         switch (condition){
             case "hot":
                 List<TourWithVisa> sortedHot = new ArrayList<>(baseOfToursList);
@@ -45,5 +44,11 @@ public class BaseOfTour {
             if(tour.getCountry().equals(country)) return tour;
         }
         throw new Exception("В базе нет такого тура");
+    }
+    public static boolean exitsTour(String country){
+        for(TourWithVisa tour : baseOfToursList){
+            if(tour.getCountry().equals(country)) return true;
+        }
+        return false;
     }
 }

@@ -17,20 +17,8 @@ public class TourAgency  {
 
        consultant.Hello();
        client.Hello();
-       client.askHotTour();
-       consultant.viewBaseOfTour("hot");
-       client.askDefTour();
-       consultant.viewBaseOfTour("default");
-       client.choiceTour("Чехия");
-       consultant.askForBuy(client.getChoiceCountry());
-       client.viewVisa(consultant.askForBuy(client.getChoiceCountry()));
-       consultant.askForAgree();
-       client.agreeInfo();
-       consultant.payReceipt(client.getChoiceCountry());
-       client.pay();
-       consultant.thanksForPay();
+       consultant.ChoiceAction();
 
-       System.out.println();
        Close();
    }
 

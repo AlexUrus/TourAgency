@@ -35,12 +35,6 @@ public class Tour  {
     public void setPrice(int price) {
         this.price = price;
     }
-    public int getComfort() {
-        return comfort;
-    }
-    public int getNumber() {
-        return number;
-    }
     public String getCountry() {
         return country;
     }
